@@ -1,5 +1,11 @@
+# revision 23092
+# category TLCore
+# catalog-ctan undef
+# catalog-date undef
+# catalog-license undef
+# catalog-version undef
 Name:		texlive-hyphen-bulgarian
-Version:	20111102
+Version:	20111103
 Release:	1
 Summary:	Bulgarian hyphenation patterns
 Group:		Publishing
@@ -46,6 +52,7 @@ Hyphenation patterns for Bulgarian in T2A and UTF-8 encodings.
 %_texmf_language_dat_d/hyphen-bulgarian
 %_texmf_language_def_d/hyphen-bulgarian
 %_texmf_language_lua_d/hyphen-bulgarian
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -54,6 +61,8 @@ Hyphenation patterns for Bulgarian in T2A and UTF-8 encodings.
 %build
 
 %install
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
 mkdir -p %{buildroot}%{_texmf_language_dat_d}
 cat > %{buildroot}%{_texmf_language_dat_d}/hyphen-bulgarian <<EOF
 %% from hyphen-bulgarian:
