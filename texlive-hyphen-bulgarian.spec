@@ -44,12 +44,12 @@ Hyphenation patterns for Bulgarian in T2A and UTF-8 encodings.
 %install
 mkdir -p %{buildroot}%{_texmf_language_dat_d}
 cat > %{buildroot}%{_texmf_language_dat_d}/hyphen-bulgarian <<EOF
-%% from hyphen-bulgarian:
+\%\% from hyphen-bulgarian:
 bulgarian loadhyph-bg.tex
 EOF
 mkdir -p %{buildroot}%{_texmf_language_def_d}
 cat > %{buildroot}%{_texmf_language_def_d}/hyphen-bulgarian <<EOF
-%% from hyphen-bulgarian:
+\%\% from hyphen-bulgarian:
 \addlanguage{bulgarian}{loadhyph-bg.tex}{}{2}{2}
 EOF
 mkdir -p %{buildroot}%{_texmf_language_lua_d}
