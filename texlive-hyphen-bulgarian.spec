@@ -66,3 +66,25 @@ cat > %{buildroot}%{_texmf_language_lua_d}/hyphen-bulgarian <<EOF
 		hyphenation = '',
 	},
 EOF
+
+
+%changelog
+* Mon Jun 11 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120611-1
++ Revision: 804686
+- Update to latest release.
+
+* Tue Jan 24 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120124-1
++ Revision: 767514
+- Add workaround to rpm bug that broke hyphenation files
+
+* Wed Jan 11 2012 Paulo Andrade <pcpa@mandriva.com.br> 20111103-2
++ Revision: 759896
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20111103-1
++ Revision: 718640
+- texlive-hyphen-bulgarian
+- texlive-hyphen-bulgarian
+- texlive-hyphen-bulgarian
+- texlive-hyphen-bulgarian
+
