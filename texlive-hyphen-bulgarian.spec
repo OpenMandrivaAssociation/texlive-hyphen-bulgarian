@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-hyphen-bulgarian
 Version:	20120611
-Release:	4
+Release:	5
 Summary:	Bulgarian hyphenation patterns
 Group:		Publishing
 URL:		http://tug.org/texlive
