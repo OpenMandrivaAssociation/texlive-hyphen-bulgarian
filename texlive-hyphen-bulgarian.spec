@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-hyphen-bulgarian
 Version:	20180728
-Release:	1
+Release:	2
 Summary:	Bulgarian hyphenation patterns
 Group:		Publishing
 URL:		http://tug.org/texlive
@@ -34,6 +34,8 @@ Hyphenation patterns for Bulgarian in T2A and UTF-8 encodings.
 %_texmf_language_dat_d/hyphen-bulgarian
 %_texmf_language_def_d/hyphen-bulgarian
 %_texmf_language_lua_d/hyphen-bulgarian
+%{_texmfdistdir}/tex/generic/hyph-utf8/loadhyph/*
+%{_texmfdistdir}/tex/generic/hyph-utf8/patterns/*/*
 
 #-----------------------------------------------------------------------
 %prep
@@ -42,6 +44,9 @@ Hyphenation patterns for Bulgarian in T2A and UTF-8 encodings.
 %build
 
 %install
+mkdir -p %{buildroot}%{_texmfdistdir}
+cp -fpar tex %{buildroot}%{_texmfdistdir}
+
 mkdir -p %{buildroot}%{_texmf_language_dat_d}
 cat > %{buildroot}%{_texmf_language_dat_d}/hyphen-bulgarian <<EOF
 \%% from hyphen-bulgarian:
