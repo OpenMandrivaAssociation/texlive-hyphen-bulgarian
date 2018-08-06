@@ -5,7 +5,7 @@
 # catalog-license undef
 # catalog-version undef
 Name:		texlive-hyphen-bulgarian
-Version:	20180409
+Version:	20180728
 Release:	1
 Summary:	Bulgarian hyphenation patterns
 Group:		Publishing
