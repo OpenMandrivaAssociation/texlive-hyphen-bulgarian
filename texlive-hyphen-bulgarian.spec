@@ -1,6 +1,6 @@
 Name:		texlive-hyphen-bulgarian
 Version:	58685
-Release:	1
+Release:	2
 Summary:	Bulgarian hyphenation patterns
 Group:		Publishing
 URL:		http://tug.org/texlive
